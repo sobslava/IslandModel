@@ -33,6 +33,7 @@ public class Settings {
     private int deathWeightPercent;
     private int animalGrowUpPercent;
     private int plantGrowUpPercent;
+    private byte corePoolSize = 4;
 
     private Settings() {
         try {
@@ -70,7 +71,7 @@ public class Settings {
         return mapCols;
     }
 
-    public Map<String, Integer> getorganismsStartNumber() {
+    public Map<String, Integer> getOrganismsStartNumber() {
         return organismsStartNumber;
     }
 
@@ -81,6 +82,8 @@ public class Settings {
     public Boolean getStopOnTimeout() {
         return stopOnTimeout;
     }
+
+    public byte getCorePoolSize() { return corePoolSize; }
 
     public int getGameDuration() {
         return gameDuration;
@@ -110,7 +113,7 @@ public class Settings {
         return initialBirthPercent;
     }
 
-    public int getdeathWeightPercent() {
+    public int getDeathWeightPercent() {
         return deathWeightPercent;
     }
 

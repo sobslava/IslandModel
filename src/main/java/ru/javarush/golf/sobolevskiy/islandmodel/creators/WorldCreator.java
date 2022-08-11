@@ -30,7 +30,7 @@ public class WorldCreator {
 
     private Area createRandomArea() {
         Settings settings = Settings.get();
-        Map<String, Integer> organismsStartNumberMap = settings.getorganismsStartNumber();
+        Map<String, Integer> organismsStartNumberMap = settings.getOrganismsStartNumber();
         int initialBirthPercent = settings.getInitialBirthPercent();
         Map<String, Set<Organism>> inhabitants = new HashMap<>();
 

@@ -1,5 +1,5 @@
-mapRows: 10
-mapCols: 10
+mapRows: 30
+mapCols: 30
 cycleDuration: 1000 # Длительность одного цикла
 gameDuration: 1000 # Миллисекунды
 stopOnTimeout: True
@@ -7,6 +7,7 @@ plantGrowUpPercent: 5
 initialBirthPercent: 75
 animalGrowUpPercent: 1
 deathWeightPercent: 50
+corePoolSize: 4
 
 organismsStartNumber:
   "Fox": 4
@@ -18,12 +19,12 @@ organismsStartNumber:
   "Buffalo": 7
   "Caterpillar": 30
   "Deer": 17
-  "Duck": 10
+  "Duck": 100
   "Goat": 12
   "Horse": 10
   "Mouse": 200
-  "Rabbit": 16
-  "Sheep": 12
+  "Rabbit": 150
+  "Sheep": 120
   "Plant": 400
 organismsChildrenQuantity:
   "Wolf": 6

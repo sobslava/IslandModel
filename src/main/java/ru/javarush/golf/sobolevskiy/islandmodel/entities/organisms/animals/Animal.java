@@ -76,7 +76,7 @@ public abstract class Animal extends Organism {
                             food.setWeight(food.getWeight() - mealWeight);
 
                             double currentFoodWeight = food.getWeight();
-                            if (currentFoodWeight < initialFoodWeight / settings.getdeathWeightPercent()) { // съели целиком или до нежизнеспособного состояния
+                            if (currentFoodWeight < initialFoodWeight / settings.getDeathWeightPercent()) { // съели целиком или до нежизнеспособного состояния
                                 foodIterator.remove();
                             }
 

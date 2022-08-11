@@ -35,7 +35,7 @@ public class GameWorker extends Thread {
             organismWorkers.add(new OrganismWorker(organismType, game.world()));
         }
 
-        int CORE_POOL_SIZE = 4;
+        byte CORE_POOL_SIZE = Settings.get().getCorePoolSize();
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(CORE_POOL_SIZE);
         for (OrganismWorker organismWorker : organismWorkers) {
             fixedThreadPool.submit(organismWorker);
