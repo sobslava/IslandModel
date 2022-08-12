@@ -2,6 +2,7 @@ package ru.javarush.golf.sobolevskiy.islandmodel.entities.settings;
 
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
+
 import ru.javarush.golf.sobolevskiy.islandmodel.entities.organisms.OrganismsCommonSpecs;
 
 import java.io.IOException;
@@ -13,6 +14,10 @@ import java.util.Objects;
 
 /**
  * Настройки
+ *
+ * @param
+ * @return
+ * @throws
  */
 
 public class Settings {
@@ -24,15 +29,15 @@ public class Settings {
     private final int cycleDuration = 100; // Default initial value
     private final Map<String, Integer> organismsStartNumber = null;
     private final Boolean stopOnTimeout = false;
-    private final int gameDuration = 1000;
-    private Map<String, Integer> organismsChildrenQuantity;
-    private Map<String, Map<String, Integer>> chanceToGetEat;
-    private Map<String, OrganismsCommonSpecs> organismsCommonSpecs;
-    private List<String> organismsTypes;
-    private int initialBirthPercent;
-    private int deathWeightPercent;
-    private int animalGrowUpPercent;
-    private int plantGrowUpPercent;
+    private final int gameDuration = 1000; // Default initial value
+    private Map<String, Integer> organismsChildrenQuantity = null;
+    private Map<String, Map<String, Integer>> chanceToGetEat = null;
+    private Map<String, OrganismsCommonSpecs> organismsCommonSpecs = null;
+    private List<String> organismsTypes = null;
+    private int initialBirthPercent = 5; // Default initial value
+    private int deathWeightPercent = 50; // Default initial value
+    private int animalGrowUpPercent = 30; // Default initial value
+    private int plantGrowUpPercent = 50; // Default initial value
     private byte corePoolSize = 4;
 
     private Settings() {
